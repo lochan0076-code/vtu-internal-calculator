@@ -28,6 +28,24 @@ HTML = """
     {% if result is not none %}
         <h3>Best CIE: {{ best_cie }}/20</h3>
         <h3>Total Internal Marks: {{ result }}/30</h3>
+        <hr>
+<p>
+  🔢 <strong>VTU Internal Marks Calculator</strong><br>
+  If this tool helped you, consider supporting its development.
+</p>
+
+<p>
+  ☕ <a href="https://buymeacoffee.com/slochan240n" target="_blank">
+     Buy Me a Coffee
+  </a>
+</p>
+
+<p>
+  🔗 <a href="https://vtu-internal-calculator.onrender.com" target="_blank">
+     Visit the Calculator
+  </a>
+</p>
+
     {% endif %}
 </body>
 </html>
@@ -54,5 +72,6 @@ def home():
 
 import os
 app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
 
 
